@@ -12,43 +12,31 @@ html {
 }
 
 body {
-   background-color: #333;
-   color: #fff;
    font-size: 1.6rem;
    line-height: 1.6;
    font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
    font-family: 'Roboto Mono', monospace;
    margin: 2rem 0;
 }
 
 a {
-   color: #fff;
+   color: #000;
    text-decoration: none;
 }
 
 .container {
-   max-width: 130rem;
+   max-width: 120rem;
    width: 96%;
    margin: 0 auto;
 }
 
-.header {
-   background-image: url(../images/bg_header.jpg);
-   height: 100vh;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.nav-container {
-   background-color: rgba(20, 20, 20, 0.4);
-}
-
 .main-nav {
-   display: flex; 
+   display: flex;
    justify-content: space-between;
    align-items: center;
    padding: 1rem;
@@ -68,7 +56,7 @@ a {
 }
 
 .nav-links a {
-   padding: 1rem 1.4rem;
+   padding: .8rem 1.4rem;
    transition: background-color .2s;
 }
 
@@ -76,12 +64,18 @@ a {
    background-color: rgba(78, 75, 75, 0.2);
 }
 
-.header-text {
+.header-bg-img {
+   background-image: url(../images/bg_header.jpg);
+   height: 65rem;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
    text-align: center;
-   padding-top: 25rem;
+   padding-top: 18rem;
+   position: relative;
 }
 
-.header-text p {
+.header-bg-img .welcome-text {
    font-size: 4rem;
    font-weight: bold;
    font-family: 'Pacifico', cursive;
@@ -89,7 +83,39 @@ a {
    margin-bottom: 0;
 }
 
-.header-text h1 {
+.header-bg-img h1 {
    font-size: 5rem;
    margin: 0;
+   color: #fff;
+}
+
+.bg-gradient {
+   background-color: rgba(20, 20, 20, 0.6);
+   position: absolute;
+   bottom: 0;
+   padding: 1.5rem 0;
+   width: 100%;
+}
+
+.header-text .info {
+   display: flex;
+   gap: 3rem;
+   color: #fff;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1.8rem;
+   font-weight: 500;
+}
+
+.header-text .info a {
+   color: #fff;
+}
+
+.header-text .info div {
+   display: flex;
+   align-items: center;
+   gap: .6rem;
+}
+
+.header-text .info svg {
+   fill: #e2e5e9
 }
